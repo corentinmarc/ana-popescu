@@ -101,7 +101,7 @@
 		    	
 		    	// Filtrage pour ne garder que les fichiers images
 		    	foreach ( $dirContent as $file ){
-		    		$tab = split('\.', $file);
+		    		$tab = explode('.', $file);
 		    		// On n'accepte que les fichiers jpg et png
 		    		if(end($tab) == 'jpg' || end($tab) == 'jpeg' || end($tab) == 'png'){
 		    			array_push($imgs, $folder.$file);
